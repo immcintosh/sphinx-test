@@ -10,6 +10,7 @@ project = "EE System"
 extensions = [
     "sphinx_panels",
     "sphinxcontrib.plantuml",
+    "sphinx.ext.githubpages",
 ]
 exclude_patterns = [
     "_build/**",
