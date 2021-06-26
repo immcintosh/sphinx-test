@@ -24,6 +24,16 @@ jobs:
         steps:
             # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: "3.9"
+            - uses: actions/setup-java@v2
+                  java-version: 16
+
+            - name: Install Dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install -r requirements.txt
 
             # Runs a single command using the runners shell
             - name: Sphinx to GitHub Pages

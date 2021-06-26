@@ -1,0 +1,6 @@
+Sphinx
+sphinx-panels
+sphinxcontrib-plantuml
+urllib3
+wget
+pydata-sphinx-theme
