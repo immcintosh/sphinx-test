@@ -1,0 +1,29 @@
+.container-xl {
+    max-width: unset;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+h2 {
+    border-bottom: 1px solid rgba(19, 6, 84, 0.3);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    border-bottom: 1px dotted rgba(19, 6, 84, 0.3);
+}
+
+div.literal-block-wrapper {
+    /* Align captioned code blocks with uncaptioned code blocks */
+    padding: unset;
+}
+
+.table tr:first-of-type td {
+    /* Make tables less visually busy */
+    border-top: unset;
+}
