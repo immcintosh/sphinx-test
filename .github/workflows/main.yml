@@ -38,7 +38,13 @@ jobs:
                   pip install -r requirements.txt
 
             # Runs a single command using the runners shell
-            - name: Sphinx to GitHub Pages
+            - name: Sphinx Build
               uses: sphinx-notes/pages@1.0
               with:
                   documentation_path: docs/
+
+            - name: Sphinx Push
+              uses: ad-m/github-push-action@master
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: gh-pages
